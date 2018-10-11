@@ -10,9 +10,6 @@
             infinite: false
         });
 
-        // Initialize accordion
-        $('.collapse').collapse();
-
         // Set the date we're counting down to
         var countDownDate = new Date("Dec 1, 2018 00:00:00").getTime();
 
