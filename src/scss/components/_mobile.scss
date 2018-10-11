@@ -1,0 +1,204 @@
+/* ------------- Mobile styles ----------------*/
+
+@media (max-width: 768px) {
+  .row {
+    margin: 0 -15px;
+  }
+
+  .container,
+  .col {
+    padding: 0 15px;
+  }
+
+  .section-title,
+  .faq-wrapper h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  header {
+    border-bottom: 0;
+    margin-bottom: 45px;
+
+    .header-top {
+      border: 0;
+      height: 80px;
+
+      .logo-wrapper {
+        img {
+          width: 107px;
+        }
+      }
+    }
+
+    .main-banner {
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        background: url('../../images/left-thumb-up_small.svg') no-repeat 0 100%;
+        bottom: 0;
+      }
+
+      .banner-content-wrapper {
+        position: relative;
+        padding-bottom: 200px;
+
+        .banner-content {
+          margin-top: 35px;
+
+          .banner-additional-info {
+            position: absolute;
+            bottom: 0;
+            margin: 0 0 0 -15px;
+            padding: 8px 15px;
+            background: #90D6E8;
+
+            p {
+              font-weight: bold;
+              text-align: left;
+              color: #003B64;
+              margin: 0;
+            }
+          }
+
+          .banner-slogan {
+            justify-content: flex-start;
+          }
+
+          .banner-description {
+            text-align: left;
+
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .preorder-console,
+  .preorder-games {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  /* -------------- Pre-order Titles by Console Styles -------------- */
+  .console-items-list {
+    .console-item {
+      padding: 0 15px;
+
+      & + .console-item {
+        margin-top: 16px;
+      }
+
+      .console-item-link {
+        min-height: 60px;
+        padding-bottom: 5px;
+
+        span {
+          font-size: 12px;
+        }
+      }
+
+      .console-logo-wrapper {
+        height: 40px;
+        padding-top: 10px;
+        margin-bottom: 3px;
+      }
+
+      //@FIXME: Small hack for weird nintendo logo issue.
+      .nintendo {
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+
+  /* -------------- Pre-order Latest Games Styles -------------- */
+  .game-item {
+    & + .game-item {
+      margin-top: 24px;
+    }
+  }
+
+  /* -------------- PS Presentation Styles -------------- */
+  .playstation-presentation-wrapper {
+    padding: 20px 0 38px;
+    background-image: url("../../images/PlayStation_logo_video2_mobile.jpg");
+
+    .playstation-description-wrapper {
+      margin-bottom: 24px;
+
+      h2 {
+        font-size: 24px;
+        text-transform: none;
+        font-weight: 700;
+      }
+    }
+
+    .playstation-product-item {
+      a {
+        flex-direction: row;
+        align-items: stretch;
+        width: 95%;
+        min-height: 105px;
+
+        .playstation-product-item-img {
+          width: 35%;
+          img {
+            width: 90%;
+            margin-bottom: 0;
+            display: block;
+          }
+        }
+
+        .playstation-item-description {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          h4 {
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            font-weight: 700;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  /* -------------- FAQ Accordion Styles -------------- */
+  .faq-wrapper {
+    margin: 35px 0 40px;
+    .accordion {
+      margin: 0 -15px;
+    }
+  }
+
+  /* -------------- Footer Styles -------------- */
+  footer {
+    padding: 16px 0;
+
+    .article-item {
+      & + .article-item {
+        margin-top: 16px;
+      }
+
+      .article-title {
+        font-size: 20px;
+      }
+    }
+  }
+}

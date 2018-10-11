@@ -1,0 +1,46 @@
+/* ------------- Footer styles ----------------*/
+footer {
+  background: #003B64;
+  padding: 48px 0;
+  position: relative;
+
+  .article-link {
+    display: block;
+    box-shadow: 0 2px 5px 0 #1C1C1C;
+
+    .article-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .article-title,
+    .article-link-text {
+      position: absolute;
+      padding: 0 24px;
+    }
+
+    .article-title {
+      top: 40%;
+      font-weight: 700;
+      font-size: 32px;
+      color: #ffffff;
+
+    }
+
+    .article-link-text {
+      font-weight: 600;
+      font-size: 16px;
+      color: #ffffff;
+      bottom: 10%;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        background: url("../../images/chevron right.svg") no-repeat;
+        height: 12px;
+        width: 8px;
+        margin-left: 5px;
+      }
+    }
+  }
+}

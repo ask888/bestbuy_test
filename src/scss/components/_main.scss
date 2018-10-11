@@ -1,0 +1,204 @@
+/* ------------- main ----------------*/
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.preorder-console,
+.preorder-games {
+  margin-bottom: 60px;
+}
+
+.console-item {
+  &:first-child {
+    padding-right: 4px;
+  }
+  &:nth-child(2) {
+    padding: 0 4px;
+  }
+  &:last-child {
+    padding-left: 4px;
+  }
+}
+
+.console-item-link {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  span {
+    color: #ffffff;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      background: url("../../images/chevron right.svg") no-repeat;
+      height: 12px;
+      width: 8px;
+      margin-left: 5px;
+    }
+  }
+
+  &.ps {
+    background: #11519B;
+  }
+  &.xbox {
+    background: #62BB46;
+  }
+  &.nintendo {
+    background: #E52634;
+  }
+  img {
+    max-height: 100%;
+  }
+}
+
+.console-logo-wrapper {
+  height: 49px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+/* ------------- Pre-order games styles ----------------*/
+.preorder-games {
+  .game-item-content-wrapper {
+    background: #F5F5F5;
+    box-shadow: 0 2px 3px 0 #d2d2d2;
+    padding: 16px;
+
+    .game-item-description {
+      font-size: 14px;
+    }
+
+    .game-item-link {
+      padding-top: 16px;
+
+      a {
+        font-weight: bold;
+        font-size: 14px;
+        color: #085EB9;
+
+      }
+    }
+  }
+
+  .game-title {
+    margin-bottom: 0;
+  }
+
+  .game-item-img {
+    a {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/* ------------- Playstation presentation styles ----------------*/
+
+.playstation-presentation-wrapper {
+  padding: 60px 0;
+  background: url(" ../../images/PlayStation_logo_video2.jpg") no-repeat center;
+  background-size: cover;
+
+  .playstation-description-wrapper {
+    margin-bottom: 70px;
+
+    h2,
+    p {
+      font-weight: 300;
+      color: #ffffff;
+    }
+    h2 {
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+  }
+
+  .playstation-video {
+    background: url("../../images/play.png");
+    display: block;
+    width: 138px;
+    height: 138px;
+  }
+
+  .playstation-product-item {
+    a {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background: #F5F5F5;
+
+      img {
+        margin-bottom: 16px;
+      }
+      
+      span {
+        font-size: 14px;
+        font-weight: 300;
+        color: #085EB9;
+      }
+    }
+  }
+}
+
+/* ------------- FAQ styles ----------------*/
+
+.faq-wrapper {
+  margin: 60px 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #4A4A4A;
+  }
+
+  .faq {
+    border-top: 1px solid #E0E0E0;
+
+    &:last-child {
+      border-bottom: 1px solid #E0E0E0;
+    }
+  }
+
+  .faq-link {
+    display: block;
+    padding: 12px 16px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+      content: '';
+      display: inline-block;
+      background: url(" ../../images/chevron right.png");
+      width: 13px;
+      height: 8px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
