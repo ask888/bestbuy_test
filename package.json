@@ -4,7 +4,7 @@
   "description": "Bestbuy Test",
   "main": "main.js",
   "scripts": {
-    "mkdir": "mkdirp dist/js dist/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css.map dist/css && cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js && cp node_modules/bootstrap/dist/js/bootstrap.min.js.map dist/js && cp node_modules/slick-carousel/slick/slick.min.js dist/js && cp node_modules/popper.js/dist/umd/popper.min.js dist/js && cp node_modules/jquery/dist/jquery.slim.min.js dist/js",
+    "mkdir": "mkdirp dist/js dist/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css.map dist/css && cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js && cp node_modules/bootstrap/dist/js/bootstrap.min.js.map dist/js && cp node_modules/slick-carousel/slick/slick.min.js dist/js && cp node_modules/popper.js/dist/umd/popper.min.js dist/js && cp node_modules/jquery/dist/jquery.min.js dist/js",
     "css:compile": "node-sass --source-map true src/scss/styles.scss -o dist/css",
     "css:prefix": "postcss --use autoprefixer -b '> 10%' dist/css/*.css -r",
     "css:minify": "cleancss --source-map dist/css/styles.css -o dist/css/styles.min.css",
